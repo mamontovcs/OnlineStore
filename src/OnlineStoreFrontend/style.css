@@ -1,0 +1,58 @@
+body{
+    margin: 20px 200px;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.header-header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-name{
+    width: 238px;
+    height: 37px;
+    color: #2b3136;
+    display: flex;
+}
+
+.first-part-headerName{
+    margin: 0;
+    font-weight: 900;
+}
+
+.second-part-headerName{
+    font-weight: 100;
+    margin: 0;
+}
+
+.search{
+    display: flex;
+}
+
+.search-goods{
+    width: 350px;
+    padding: 5px;
+}
+
+.img-search{
+    margin-left: -25px;
+    height: 17px;
+    width: 17px;
+    display: flex;
+    align-self: center;
+}
+
+.header-navigation{
+    display: flex;
+    gap: 28px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
