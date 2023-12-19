@@ -7,10 +7,12 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["OnlineStore/OnlineStore.csproj", "OnlineStore/"]
+COPY ["OnlineStore.csproj", "OnlineStore/"]
 RUN dotnet restore "OnlineStore/OnlineStore.csproj"
-COPY . .
+
 WORKDIR "/src/OnlineStore"
+COPY . .
+
 RUN dotnet build "OnlineStore.csproj" -c Release -o /app/build
 
 FROM build AS publish
