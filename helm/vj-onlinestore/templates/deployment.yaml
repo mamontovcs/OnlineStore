@@ -20,5 +20,5 @@ spec:
           - containerPort: 80
         readinessProbe:
           httpGet:
-            path: /api/test/ping
+            path: /api/goods/ping
             port: 80
